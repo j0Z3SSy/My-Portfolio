@@ -1,0 +1,16 @@
+footer {
+  padding: 0.5vw 0vw 0.3vw 0vw;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  text-align: center;
+  border-top: 2px solid #ff4646; /* Optional: Add a border around the footer */
+  display: flex; /* Flexbox layout for aligning items */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Align items vertically */
+  gap: 20px;
+  z-index: 1;
+}
+footer h4 {
+  font-size: 1.5rem; /* Text size */
+  text-transform: uppercase;
+}

@@ -1,0 +1,75 @@
+.slideshow-container {
+  position: relative;
+  border: 2px solid #6a6a6a; /* Optional: Add a border around images */
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  width: 700px;
+  height: 600px;
+  display: block; /* Remove any extra space below the image */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  filter: grayscale(100%); /* Apply grayscale */
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%; /* Position the button in the middle vertically */
+  transform: translateY(-50%); /* Adjust to center relative to the element */
+  width: auto;
+  padding: 16px;
+  color: #ff4646;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 2; /* Ensure the buttons are on top of the slides */
+}
+/* Optional styles for placement */
+.prev {
+  left: 0; /* Position the previous button on the left */
+}
+.next {
+  right: 0; /* Position the next button on the right */
+}
+/* Caption text */
+.text {
+  color: #000000;
+  /* top | right | bottom | left */
+  padding: 0vw 2vw 0vw 2vw;
+  position: absolute;
+  top: 5%;
+  width: 80%;
+  text-align: left;
+  background-color: #ffffff;
+  font-size: 1.2rem; /* Text size */
+}
+.text h2 {
+  text-align: left;
+  color: #ffffff;
+  background-color: #ff4646;
+  width: fit-content;
+  /* top | right | bottom | left */
+  margin: 1vw 0vw 1vw 0vw;
+  padding: 0.2vw 0.5vw 0.2vw 0.5vw;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #ff4646;
+}

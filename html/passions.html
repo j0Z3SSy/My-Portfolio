@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="myporfolio.jonimitronen.xyz provides a portfolio of a young upcoming IT expert from Finland"
+    />
+    <meta name="author" content="Joni Mitronen" />
+    <meta
+      name="keywords"
+      content="Portfolio, IT, Backend, Java, Python, Student, Software Developer, Finland, Finnish"
+    />
+    <!-- Google Fonts Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../media/favicon.ico" />
+    <!-- CSS Style Import-->
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/carousel.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <title>Joni Mitronen / Passions</title>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <main>
+      <header></header>
+      <section class="flex-column">
+        <div class="slideshow-container">
+          <div class="mySlides">
+            <img src="../media/images/coding.jpg" />
+            <div class="text">
+              <h2>Coding</h2>
+              <p>
+                Coding and everything you can do with a keyboard in front of a computer is interesting! I have many
+                different projects in mind for myself to carry out, and I will list them below as I get them published.
+              </p>
+            </div>
+          </div>
+          <div class="mySlides">
+            <img src="../media/images/bjj.png" />
+            <div class="text">
+              <h2>Brazilian Jiu-Jitsu</h2>
+              <p>
+                I started Brazilian jiu-jitsu to support my well-being and health. It puts a good strain on the whole
+                body and provides an opportunity to disconnect from everyday life. It also helps me stay smoke-free, a
+                decision I don't regret for a second! I am currently at the level of a white belt and I participate in
+                competitions when ever I get the chance.
+              </p>
+            </div>
+          </div>
+          <div class="mySlides">
+            <img src="../media/images/music.jpg" />
+            <div class="text">
+              <h2>Music</h2>
+              <p>
+                I've been making music on an amateur level since I was 16 years old. Electronic Dance Music, rap and
+                currently metal are examples of what genres I produce or am learning to produce. I started playing
+                guitar because I've always wanted to play an instrument. I also write lyrics. Needless to say, I listen
+                to quite a lot of music and all sorts of things. From gentle classic to dark death metal. I usually go
+                to gigs in the winter and spend most of my summer in music festivals.
+              </p>
+            </div>
+          </div>
+          <div class="mySlides">
+            <img src="../media/images/fishing.jpg" />
+            <div class="text">
+              <h2>Fishing</h2>
+              <p>
+                Finnish summers are short, so make the most of it! I fish at the cottage and most of the time I hope to
+                catch pike. I enjoy fish food and my dogs too, so this hobby needs no more justification. And when you
+                don't catch fish, you get to enjoy the fresh air and beautiful scenery.
+              </p>
+            </div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </section>
+    </main>
+    <div id="footer"></div>
+    <script src="../javascript/includes.js"></script>
+    <script src="../javascript/carousel.js"></script>
+  </body>
+</html>

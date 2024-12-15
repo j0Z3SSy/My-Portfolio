@@ -1,0 +1,157 @@
+/* Skill bars */
+.bar {
+  width: 100%; /* Full width */
+  background-color: #000000a6;
+  margin-top: 0.5vw;
+  border: solid #6a6a6a 2px;
+  /* border: solid #ff4646 4px; */
+}
+.skills {
+  text-align: left;
+  padding: 0.2vw 0.2vw 0.2vw 0.5vw;
+  color: #ffffff;
+  border: solid #4d4d4d 1px;
+}
+/* Hard Skills */
+.python {
+  width: 60%;
+  background-color: #162944; /* Python Blue */
+}
+
+.java {
+  width: 55%;
+  background-color: #290f0a; /* Java Orange */
+}
+
+.mysql {
+  width: 45%;
+  background-color: #041d23; /* MySQL Blue */
+}
+
+.sql {
+  width: 24%;
+  background-color: #6b532c; /* SQL Yellow */
+}
+
+.php {
+  width: 24%;
+  background-color: #211746; /* PHP Purple */
+}
+
+.docker {
+  width: 30%;
+  background-color: #0c3559; /* Docker Blue */
+}
+
+.html {
+  width: 40%;
+  background-color: #3f160c; /* HTML Orange-Red */
+}
+
+.css {
+  width: 40%;
+  background-color: #0d093d; /* CSS Blue */
+}
+
+.js {
+  width: 25%;
+  background-color: #393410; /* JavaScript Yellow */
+}
+
+.wordpress {
+  width: 24%;
+  background-color: #2f4752; /* WordPress Blue */
+}
+
+.win {
+  width: 70%;
+  background-color: #003144; /* Windows Blue */
+}
+
+.linux {
+  width: 45%;
+  background-color: #6f5e2a; /* Linux Yellow */
+}
+
+.visualstudiocode {
+  width: 70%;
+  background-color: #00243d; /* Visual Studio Code Blue */
+}
+
+.visualstudio {
+  width: 26%;
+  background-color: #2d0e35; /* Visual Studio Purple */
+}
+
+.git {
+  width: 35%;
+  background-color: #522118; /* Git Orange-Red */
+}
+
+.github {
+  width: 65%;
+  background-color: #250d4c; /* GitHub Black */
+}
+
+.apis {
+  width: 50%;
+  background-color: #583086; /* APIs Purple */
+}
+
+.jira {
+  width: 24%;
+  background-color: #084cb3; /* Jira Blue */
+}
+
+.confluence {
+  width: 24%;
+  background-color: #152541; /* Confluence Navy Blue */
+}
+/* Soft Skills */
+.leadership-teamwork {
+  width: 85%;
+  background-color: #000000;
+}
+
+.communication-creativity {
+  width: 75%;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.timemanagement-adaptibility {
+  width: 70%;
+  background-color: #000000;
+}
+
+.problem-solving-criticalthinking {
+  width: 55%;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.workethics-conflictmanagement {
+  width: 65%;
+  background-color: #000000;
+}
+
+.emotionalintelligence {
+  width: 60%;
+  background-color: #ffffff;
+  color: #000000;
+}
+/* Languages */
+.finnish {
+  width: 96%;
+  background-image: linear-gradient(to right, rgb(41, 123, 255), rgb(255, 255, 255));
+}
+
+.english {
+  width: 83%;
+  background-image: linear-gradient(to right, rgb(181, 37, 37), rgb(255, 255, 255), rgb(43, 43, 189));
+}
+
+.swedish {
+  width: 19%;
+  background-image: linear-gradient(to right, rgb(41, 73, 255), rgb(224, 190, 17));
+}

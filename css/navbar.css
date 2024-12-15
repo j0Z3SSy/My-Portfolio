@@ -1,0 +1,52 @@
+nav {
+  /* top | right | bottom | left */
+  padding: 0.3vw 0vw 0.3vw 0vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  border-bottom: 2px solid #ff4646; /* Optional: Add a border around images */
+  display: flex; /* Flexbox layout for aligning items */
+  justify-content: center; /* Center items horizontally */
+  align-items: flex-end; /* Align items vertically */
+  gap: 30px; /* Space between links */
+  z-index: 1;
+}
+/* Styling for navbar links (both images and text) */
+nav a {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Link text color */
+  font-size: 2rem; /* Text size */
+  display: flex; /* Flexbox for aligning text and images */
+  align-items: center; /* Vertical alignment */
+  text-transform: uppercase;
+  border-bottom: 2px solid #ff4646; /* Optional: Add a border around images */
+}
+/* Styling for images in navbar links */
+nav a img {
+  width: 2.5rem; /* Match the font size */
+  height: 2.5rem; /* Match the font size */
+  object-fit: contain; /* Ensure the image scales properly */
+}
+nav a,
+nav a img {
+  transition: all 0.4s ease; /* Apply a smooth transition to all properties */
+  padding: 0vw 0.5vw 0vw 0.5vw; /* Initial padding */
+  color: #000000; /* Initial color */
+  background-color: #ffffff; /* Initial background color */
+}
+nav a:hover,
+nav a img:hover {
+  color: #ffffff;
+  width: fit-content;
+  background-color: #ff4646;
+  padding: 0vw 1.2vw 0vw 1.2vw;
+}
+nav a:active,
+nav a img :active {
+  color: #ffffff;
+  width: fit-content;
+  background-color: #000000;
+}

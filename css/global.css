@@ -1,0 +1,280 @@
+body,
+html {
+  /* Remove fixed height for body and html */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensure it covers the viewport height */
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  /* Background image settings */
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0.4)), url("../media/images/hyperspace-2.png");
+  background-position: center;
+  background-repeat: repeat; /* Enable tiling */
+  background-size: auto; /* Use the original size of the image for seamless tiling */
+
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack children vertically */
+}
+main {
+  /* top | right | bottom | left */
+  padding: 0vw 0vw 0vw 0vw;
+  /* background-color: rgb(226, 152, 255); */
+
+  flex: 1; /* This makes the main content take up available space */
+}
+.experience-electrician a,
+.flex-item-center a {
+  color: #0015ff;
+  font-size: 1.2rem; /* Text size */
+  font-weight: bold;
+}
+.experience-electrician a:active,
+.flex-item-center a {
+  color: #0015ff;
+}
+h1,
+h2,
+h4 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+h3 {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+header {
+  /* top | right | bottom | left */
+  padding: 5vw 0vw 1vw 0vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  /* tän pitäs muuttuu ku näyttöö zoomaa */
+  gap: 1rem;
+}
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  flex-direction: row;
+  align-items: start;
+  gap: 2rem; /* Add spacing between flex items */
+  /* top | right | bottom | left */
+  padding: 0vw 0vw 20vw 0vw;
+}
+.flex-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem; /* Add spacing between flex items */
+  /* top | right | bottom | left */
+  padding: 0vw 0vw 20vw 0vw;
+}
+.hero-img {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url("../media/images/uuno.png");
+  /* Set the height to fill the viewport */
+  height: 100vh; /* Full height of the viewport */
+  /* Position and scale the background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Set relative positioning to allow absolute positioning of the text */
+  position: relative;
+}
+.flex-item-center {
+  /* top | right | bottom | left */
+  padding: 1vw 1vw 1vw 1vw;
+  overflow: hidden; /* Prevents overflowing content */
+  white-space: normal;
+  word-wrap: break-word;
+  width: 100%; /* Fixed width */
+  height: 100%; /* Fixed height */
+  max-width: 25%; /* Maximum width */
+  max-height: 100%; /* Maximum height */
+  min-width: 25%; /* Minimum width */
+  min-height: 100%; /* Minimum height */
+  box-sizing: border-box; /* Ensure padding and borders don't affect dimensions */
+  text-align: center; /* Center text content */
+  background-color: #ffffff;
+  border: 2px solid #6a6a6a; /* Optional: Add a border around images */
+  color: #000000;
+}
+.flex-item-hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* top | right | bottom | left */
+  padding: 1vw 1vw 1vw 1vw;
+  white-space: normal;
+  word-wrap: break-word;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+  /* background-color: #00ffbf; */
+  /* border: 5px solid #a135ff; */
+  text-align: center;
+  z-index: 0;
+}
+.flex-item-hero h2 {
+  font-size: 8rem; /* Adjust the size of the welcome heading */
+  text-transform: uppercase;
+  text-decoration: underline #ff4646 10px;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+.flex-item-hero p {
+  font-size: 3rem; /* Adjust the size of the welcome heading */
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+.flex-item-hero img.profile {
+  width: 20rem; /* Adjust the size of the profile picture */
+  height: 20rem; /* Adjust the size of the profile picture */
+  object-fit: cover; /* Ensures the image covers the circle properly */
+  border-radius: 50%; /* Makes the image circular */
+  margin-bottom: 0rem; /* Space between the image and the text */
+  border: 10px solid #6a6a6a;
+  box-shadow: 0 10px 20px rgb(255, 69, 69), 0 -10px 15px rgb(255, 255, 255); /* Adds shadow */
+  animation: subtle-shadow 2s ease-in-out infinite; /* Applies the subtle animation */
+}
+@keyframes subtle-shadow {
+  0% {
+    box-shadow: 0 10px 20px rgb(255, 69, 69), 0 -10px 15px rgb(255, 255, 255);
+  }
+  25% {
+    box-shadow: 2px 8px 18px rgb(255, 69, 69), -2px -8px 13px rgb(255, 255, 255);
+  }
+  50% {
+    box-shadow: 0 6px 15px rgb(255, 69, 69), 0 -6px 12px rgb(255, 255, 255);
+  }
+  75% {
+    box-shadow: -2px 8px 18px rgb(255, 69, 69), 2px -8px 13px rgb(255, 255, 255);
+  }
+  100% {
+    box-shadow: 0 10px 20px rgb(255, 69, 69), 0 -10px 15px rgb(255, 255, 255);
+  }
+}
+.flex-item-hero a img {
+  width: 5rem; /* Match the font size */
+  height: 5rem; /* Match the font size */
+  object-fit: contain; /* Ensure the image scales properly */
+  transition: all 0.4s ease; /* Apply a smooth transition to all properties */
+}
+.flex-item-hero a img:hover {
+  transform: rotate(20deg); /* Tilts the image by -10 degrees */
+}
+.flex-item-left {
+  /* top | right | bottom | left */
+  padding: 1vw 1vw 1vw 1vw;
+  overflow: hidden; /* Prevents overflowing content */
+  white-space: normal;
+  word-wrap: break-word;
+  width: 100%; /* Fixed width */
+  height: 100%; /* Fixed height */
+  max-width: 30%; /* Maximum width */
+  max-height: 100%; /* Maximum height */
+  min-width: 30%; /* Minimum width */
+  min-height: 100%; /* Minimum height */
+  box-sizing: border-box; /* Ensure padding and borders don't affect dimensions */
+  text-align: left; /* Center text content */
+  background-color: #ffffff;
+  border: 2px solid #6a6a6a; /* Optional: Add a border around images */
+  color: #000000;
+}
+.flex-item-left h2,
+.flex-item-center h2 {
+  font-size: 1.6rem; /* Text size */
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: underline 5px #ff4646;
+}
+.flex-item-center h3 {
+  font-size: 1.3rem; /* Text size */
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ff4646;
+  width: fit-content;
+  /* top | right | bottom | left */
+  margin: 1vw 0vw 1vw 0vw;
+  padding: 0.2vw 0.5vw 0.2vw 0.5vw;
+}
+.flex-item-left p {
+  font-size: 1.2rem; /* Text size */
+}
+.flex-item-center p {
+  font-size: 1rem; /* Text size */
+}
+.flex-item-img {
+  padding: 0vw 0vw 0vw 0vw;
+  overflow: hidden;
+  white-space: normal;
+  word-wrap: break-word;
+  width: 100%;
+  height: 100%;
+  max-width: 30%;
+  max-height: 100%;
+  min-width: 30%;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+.flex-item-img img {
+  width: 100%;
+  height: auto;
+  max-width: 30rem;
+  max-height: 20rem;
+  object-fit: cover;
+  border: 2px solid #ff4646;
+}
+/* Style the unordered list (ul) */
+.flex-item-center ul {
+  text-align: left;
+  /* top | right | bottom | left */
+  padding: 0vw 0vw 0vw 1.2vw;
+}
+/* Style the list items (li) */
+.flex-item-center li {
+  list-style-type: square;
+}
+/* Background image for experience section */
+.experience-electrician {
+  background-image: url("../media/images/electrician.png");
+  background-size: 40px; /* Set the image size (e.g., 50px x 50px) */
+  background-position-y: center;
+  background-position-x: 25%;
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+/* Background image for education section */
+.education-code {
+  background-image: url("../media/images/coding.png");
+  background-size: 40px; /* Set the image size (e.g., 50px x 50px) */
+  background-position-y: center;
+  background-position-x: 5%;
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+.education-electrician {
+  background-image: url("../media/images/electrician.png");
+  background-size: 40px; /* Set the image size (e.g., 50px x 50px) */
+  background-position-y: center;
+  background-position-x: 5%;
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+.education-army {
+  background-image: url("../media/images/sergeant.png");
+  background-size: 40px; /* Set the image size (e.g., 50px x 50px) */
+  background-position-y: center;
+  background-position-x: 5%;
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
