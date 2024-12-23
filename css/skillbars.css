@@ -1,157 +1,204 @@
 /* Skill bars */
 .bar {
-  width: 100%; /* Full width */
-  background-color: #000000a6;
+  width: 100%;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), #3c3c3c);
   margin-top: 0.5vw;
   border: solid #6a6a6a 2px;
-  /* border: solid #ff4646 4px; */
 }
 .skills {
   text-align: left;
   padding: 0.2vw 0.2vw 0.2vw 0.5vw;
   color: #ffffff;
-  border: solid #4d4d4d 1px;
 }
 /* Hard Skills */
 .python {
   width: 60%;
-  background-color: #162944; /* Python Blue */
+  background: linear-gradient(90deg, #17344a, #6b5919);
 }
-
+.python:hover {
+  background: linear-gradient(90deg, #3876b3, #ffe06b);
+}
 .java {
   width: 55%;
-  background-color: #290f0a; /* Java Orange */
+  background: linear-gradient(90deg, #3f2608, #5e110c);
 }
-
+.java:hover {
+  background: linear-gradient(90deg, #f9aa40, #e84131);
+}
 .mysql {
   width: 45%;
-  background-color: #041d23; /* MySQL Blue */
+  background: linear-gradient(90deg, #003b49, #6b4007);
 }
-
+.mysql:hover {
+  background: linear-gradient(90deg, #008ca5, #f4a63d);
+}
 .sql {
   width: 24%;
-  background-color: #6b532c; /* SQL Yellow */
+  background: linear-gradient(90deg, #5a4d00, #3c2c04);
 }
-
+.sql:hover {
+  background: linear-gradient(90deg, #ffdf33, #c89b20);
+}
 .php {
   width: 24%;
-  background-color: #211746; /* PHP Purple */
+  background: linear-gradient(90deg, #1b1235, #5d5f8f);
 }
-
+.php:hover {
+  background: linear-gradient(90deg, #6270ab, #99a3c8);
+}
 .docker {
   width: 30%;
-  background-color: #0c3559; /* Docker Blue */
+  background: linear-gradient(90deg, #08223b, #003c66);
 }
-
+.docker:hover {
+  background: linear-gradient(90deg, #45a8f2, #0a6ab2);
+}
 .html {
   width: 40%;
-  background-color: #3f160c; /* HTML Orange-Red */
+  background: linear-gradient(90deg, #5d2515, #a7361c);
 }
-
+.html:hover {
+  background: linear-gradient(90deg, #e86440, #f37b4d);
+}
 .css {
   width: 40%;
-  background-color: #0d093d; /* CSS Blue */
+  background: linear-gradient(90deg, #07052a, #1c1a63);
 }
-
+.css:hover {
+  background: linear-gradient(90deg, #3a78f4, #3462e8);
+}
 .js {
-  width: 25%;
-  background-color: #393410; /* JavaScript Yellow */
+  width: 26%;
+  background: linear-gradient(90deg, #645c0a, #2c2508);
 }
-
+.js:hover {
+  background: linear-gradient(90deg, #f9e645, #d4b02f);
+}
 .wordpress {
   width: 24%;
-  background-color: #2f4752; /* WordPress Blue */
+  background: linear-gradient(90deg, #143846, #662411);
 }
-
+.wordpress:hover {
+  background: linear-gradient(90deg, #3291b3, #e3693e);
+}
 .win {
   width: 70%;
-  background-color: #003144; /* Windows Blue */
+  background: linear-gradient(90deg, #00214b, #005a79);
 }
-
+.win:hover {
+  background: linear-gradient(90deg, #208ae0, #32c4f5);
+}
 .linux {
   width: 45%;
-  background-color: #6f5e2a; /* Linux Yellow */
+  background: linear-gradient(90deg, #5e4d11, #702d0f);
 }
-
+.linux:hover {
+  background: linear-gradient(90deg, #f7d13d, #e35a30);
+}
 .visualstudiocode {
   width: 70%;
-  background-color: #00243d; /* Visual Studio Code Blue */
+  background: linear-gradient(90deg, #004066, #005f7c);
 }
-
+.visualstudiocode:hover {
+  background: linear-gradient(90deg, #2692d8, #3aadf5);
+}
 .visualstudio {
-  width: 26%;
-  background-color: #2d0e35; /* Visual Studio Purple */
+  width: 28%;
+  background: linear-gradient(90deg, #3c1246, #8a1689);
 }
-
+.visualstudio:hover {
+  background: linear-gradient(90deg, #814893, #bf33df);
+}
 .git {
   width: 35%;
-  background-color: #522118; /* Git Orange-Red */
+  background: linear-gradient(90deg, #6c2b16, #611900);
 }
-
+.git:hover {
+  background: linear-gradient(90deg, #f56743, #ae3b1a);
+}
 .github {
-  width: 65%;
-  background-color: #250d4c; /* GitHub Black */
+  width: 55%;
+  background: linear-gradient(90deg, #181818, #2c235a);
 }
-
+.github:hover {
+  background: linear-gradient(90deg, #908686, #7257f6);
+}
 .apis {
   width: 50%;
-  background-color: #583086; /* APIs Purple */
+  background: linear-gradient(90deg, #4c3286, #583086);
 }
-
+.apis:hover {
+  background: linear-gradient(90deg, #7c57d0, #ddbaff);
+}
 .jira {
-  width: 24%;
-  background-color: #084cb3; /* Jira Blue */
+  width: 26%;
+  background: linear-gradient(90deg, #002a80, #1951aa);
 }
-
+.jira:hover {
+  background: linear-gradient(90deg, #1967e3, #4b98ff);
+}
 .confluence {
-  width: 24%;
-  background-color: #152541; /* Confluence Navy Blue */
+  width: 26%;
+  background: linear-gradient(90deg, #0b1b34, #003b80);
+}
+.confluence:hover {
+  background: linear-gradient(90deg, #1f3c64, #1967e3);
 }
 /* Soft Skills */
-.leadership-teamwork {
+.leadership {
   width: 85%;
-  background-color: #000000;
+  background: linear-gradient(90deg, #310000, #e72626);
 }
-
-.communication-creativity {
+.leadership:hover {
+  background: linear-gradient(90deg, #ff423f, #ff9379);
+}
+.workethics {
+  width: 85%;
+  background: linear-gradient(90deg, #001e3b, #1976d2);
+}
+.workethics:hover {
+  background: linear-gradient(90deg, #42a5f5, #93ceff);
+}
+.teamwork {
   width: 75%;
-  background-color: #ffffff;
-  color: #000000;
+  background: linear-gradient(90deg, #0d3b20, #4caf50);
 }
-
-.timemanagement-adaptibility {
-  width: 70%;
-  background-color: #000000;
+.teamwork:hover {
+  background: linear-gradient(90deg, #63ba74, #b8fb8c);
 }
-
-.problem-solving-criticalthinking {
-  width: 55%;
-  background-color: #ffffff;
-  color: #000000;
+.timemanagement {
+  width: 72%;
+  background: linear-gradient(90deg, #4f4b06, #ffc61a);
 }
-
-.workethics-conflictmanagement {
+.timemanagement:hover {
+  background: linear-gradient(90deg, #f1e364, #c2b26a);
+}
+.problem-solving {
   width: 65%;
-  background-color: #000000;
+  background: linear-gradient(90deg, #022a2c, #00acc1);
 }
-
-.emotionalintelligence {
-  width: 60%;
-  background-color: #ffffff;
-  color: #000000;
+.problem-solving:hover {
+  background: linear-gradient(90deg, #44d9ed, #5ae7f7);
 }
 /* Languages */
 .finnish {
   width: 96%;
+  background-image: linear-gradient(to right, rgb(26, 78, 163), rgb(163, 163, 163));
+}
+.finnish:hover {
   background-image: linear-gradient(to right, rgb(41, 123, 255), rgb(255, 255, 255));
 }
-
 .english {
   width: 83%;
+  background-image: linear-gradient(to right, rgb(112, 23, 23), rgb(163, 163, 163), rgb(29, 29, 126));
+}
+.english:hover {
   background-image: linear-gradient(to right, rgb(181, 37, 37), rgb(255, 255, 255), rgb(43, 43, 189));
 }
-
 .swedish {
-  width: 19%;
+  width: 20%;
+  background-image: linear-gradient(to right, rgb(26, 46, 163), rgb(162, 137, 12));
+}
+.swedish:hover {
   background-image: linear-gradient(to right, rgb(41, 73, 255), rgb(224, 190, 17));
 }

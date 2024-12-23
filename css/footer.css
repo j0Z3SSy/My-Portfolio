@@ -3,14 +3,18 @@ footer {
   background-color: rgb(0, 0, 0);
   color: #ffffff;
   text-align: center;
-  border-top: 2px solid #ff4646; /* Optional: Add a border around the footer */
-  display: flex; /* Flexbox layout for aligning items */
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Align items vertically */
+  border-top: 2px solid #ff4646;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   z-index: 1;
+  box-shadow: 0 0 20px rgb(255, 255, 255);
 }
 footer h4 {
-  font-size: 1.5rem; /* Text size */
+  font-size: 1.5rem;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }

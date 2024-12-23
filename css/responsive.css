@@ -1,0 +1,243 @@
+/* Use relative units like percentages (%), viewport width (vw), viewport height (vh), and rem/em for fonts. These units adjust based on the screen size. */
+/* For screens larger than 768px (tablets, laptops, desktops) */
+@media (min-width: 768px) {
+  nav {
+    padding: 0.3vw 0vw 0.3vw 0vw;
+    gap: 30px;
+    position: fixed;
+    top: 0;
+  }
+  nav a {
+    font-size: 2rem;
+  }
+  nav a img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  footer {
+    padding: 0.5vw 0vw 0.5vw 0vw;
+  }
+  footer h4 {
+    font-size: 1.3rem;
+  }
+  main {
+    margin: 5vw 0vw 2vw 0vw;
+  }
+  .flex-item-hero {
+    margin: 3vh 0 20vh 0;
+  }
+  .flex-item-hero h1 {
+    font-size: 6rem;
+  }
+  .flex-item-hero p {
+    font-size: 2.5rem;
+  }
+  .flex-item-hero img.profile {
+    width: 25rem;
+    height: 25rem;
+  }
+  .flex-item-left {
+    padding: 1vw;
+    margin: 1vw 0vw 0vw 0vw;
+    height: auto;
+    width: auto;
+  }
+  .flex-item-left,
+  .flex-item-img {
+    flex: 1;
+    max-width: 40%;
+    min-width: 0;
+  }
+  .flex-item-img img {
+    margin: 1vw;
+    height: 50vh;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: 50% 65%;
+  }
+  .flex-item-center {
+    padding: 1vw;
+    margin: 1vw 0vw 0vw 0vw;
+    overflow: hidden;
+    flex: 1 1 calc(33.33% - 5rem);
+    max-width: calc(33.33% - 5rem);
+    height: 90vh;
+  }
+  .flex-item-center .carousel .slideshow-container .mySlides img,
+  .flex-item-center .carousel .slideshow-container .mySlides video {
+    height: 30vh;
+    width: 80vh;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+/* For screens smaller than 768px (like tablets and small desktops) */
+@media (max-width: 768px) {
+  nav {
+    padding: 0.3vw 0vw 1vw 0vw;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+  }
+  nav a {
+    font-size: 1.8rem;
+  }
+  nav a img {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  footer {
+    padding: 1vw 0vw 1vw 0vw;
+  }
+  footer h4 {
+    font-size: 1rem;
+  }
+  main {
+    margin: 10vw 0vw 4vw 0vw;
+  }
+  .flex-item-hero {
+    margin: 3vh 0 20vh 0;
+  }
+  .flex-item-hero h1 {
+    font-size: 4rem;
+  }
+  .flex-item-hero p {
+    font-size: 1.5rem;
+  }
+  .flex-item-hero img.profile {
+    width: 15rem;
+    height: 15rem;
+  }
+  .flex-row {
+    gap: 0rem;
+  }
+  .flex-item-left {
+    max-width: 100%;
+    padding: 1.5vw;
+    margin: 1vw 4vw 0vw 4vw;
+  }
+  .flex-item-left,
+  .flex-item-img {
+    flex: 1;
+    max-width: 50%;
+  }
+  .flex-item-img {
+    margin: 1vw 4vw 0vw 4vw;
+    max-width: 100%;
+    text-align: center;
+  }
+  .flex-item-img img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+  .flex-item-center {
+    margin: 1vw 4vw 4vw 4vw;
+    padding: 4vw;
+    flex: 1 1 calc(100% - 2rem);
+    max-width: calc(100% - 2rem);
+    height: auto;
+  }
+  .slideshow-container {
+    margin: 1vw 4vw 1vw 4vw;
+    width: fit-content;
+  }
+  .flex-item-center .carousel .slideshow-container .mySlides img,
+  .flex-item-center .carousel .slideshow-container .mySlides video {
+    height: 40vh;
+    width: 70vh;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .text {
+    font-size: 1rem;
+    top: 45%;
+  }
+}
+/* For screens smaller than 480px (smartphones) */
+@media (max-width: 480px) {
+  nav {
+    padding: 0.3vw 0vw 3vw 0vw;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+  }
+  nav a {
+    font-size: 1.5rem;
+  }
+  nav a img {
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+  footer {
+    padding: 2vw 0vw 2vw 0vw;
+  }
+  footer h4 {
+    font-size: 1rem;
+  }
+  main {
+    margin: 8vw 0vw 5vw 0vw;
+  }
+  .flex-item-hero {
+    margin: 2vh 0 20vh 0;
+  }
+  .flex-item-hero h1 {
+    font-size: 4rem;
+  }
+  .flex-item-hero p {
+    font-size: 1.5rem;
+  }
+  .flex-item-hero img.profile {
+    width: 10rem;
+    height: 10rem;
+  }
+  .flex-row {
+    flex-direction: column;
+  }
+  .flex-item-left {
+    max-width: 100%;
+    padding: 1vw;
+    margin: 1vw 4vw 0vw 4vw;
+  }
+  .flex-item-left,
+  .flex-item-img {
+    flex: 1;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .flex-item-img {
+    margin: 1vw 4vw 0vw 4vw;
+    max-width: 100%;
+  }
+  .flex-item-img img {
+    margin: 0vw;
+    height: auto;
+  }
+  .flex-item-center {
+    margin: 1vw 4vw 4vw 4vw;
+    padding: 4vw;
+    width: calc(100% - 8vw);
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .slideshow-container {
+    margin: 1vw 4vw 4vw 4vw;
+  }
+  .flex-item-center .carousel .slideshow-container .mySlides img,
+  .flex-item-center .carousel .slideshow-container .mySlides video {
+    height: 25vh;
+    width: 55vh;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .text {
+    font-size: 0.9rem;
+    top: 25%;
+  }
+}
