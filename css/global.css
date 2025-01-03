@@ -72,7 +72,7 @@ header {
   flex-direction: column;
   gap: 1rem;
 }
-.flex-row {
+.flex-container-1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -81,7 +81,7 @@ header {
   align-items: flex-start;
   gap: 2rem;
 }
-.flex-column {
+.flex-container-2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -90,13 +90,22 @@ header {
   align-items: center;
   gap: 2rem;
 }
+.flex-container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+}
 .flex-item-center {
   padding: 1vw;
-  margin: 1vw 0vw 0vw 0vw;
+  margin: 1vw 0vw 1vw 0vw;
   overflow: hidden;
   flex: 1 1 calc(33.33% - 5rem);
   max-width: calc(33.33% - 5rem);
-  height: 85vh;
+  height: auto;
   box-sizing: border-box;
   text-align: center;
   background-color: #ffffff;

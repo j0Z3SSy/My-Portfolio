@@ -35,8 +35,8 @@
   display: block;
   margin: 0;
   padding: 0;
-  height: 30vh;
-  width: 80vh;
+  height: 100%;
+  width: 100%;
   max-width: 100%;
   object-fit: cover;
 }
@@ -53,21 +53,15 @@
   font-weight: bold;
   font-size: 35px;
   user-select: none;
-  z-index: 2;
+  z-index: 1;
 }
 .prev {
   left: 10px;
   transition: left 1s;
 }
-.prev:hover {
-  left: 0px;
-}
 .next {
   right: 10px;
   transition: right 1s;
-}
-.next:hover {
-  right: 0px;
 }
 .dots {
   text-align: center;

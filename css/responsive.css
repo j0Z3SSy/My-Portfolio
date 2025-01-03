@@ -1,6 +1,6 @@
 /* Use relative units like percentages (%), viewport width (vw), viewport height (vh), and rem/em for fonts. These units adjust based on the screen size. */
 /* For screens larger than 768px (tablets, laptops, desktops) */
-@media (min-width: 768px) {
+@media (min-width: 1450px) and (max-width: 2000px) {
   nav {
     padding: 0.3vw 0vw 0.3vw 0vw;
     gap: 30px;
@@ -16,6 +16,7 @@
   }
   footer {
     padding: 0.5vw 0vw 0.5vw 0vw;
+    margin-top: 10vh;
   }
   footer h4 {
     font-size: 1.3rem;
@@ -37,7 +38,7 @@
     height: 25rem;
   }
   .flex-item-left {
-    padding: 1vw;
+    padding: 0.8vw;
     margin: 1vw 0vw 0vw 0vw;
     height: auto;
     width: auto;
@@ -45,38 +46,41 @@
   .flex-item-left,
   .flex-item-img {
     flex: 1;
-    max-width: 40%;
+    max-width: 45%;
     min-width: 0;
   }
   .flex-item-img img {
     margin: 1vw;
-    height: 50vh;
+    height: 45vh;
     width: auto;
     max-width: 100%;
     object-fit: cover;
-    object-position: 50% 65%;
+    object-position: 50% 60%;
   }
+
   .flex-item-center {
     padding: 1vw;
     margin: 1vw 0vw 0vw 0vw;
-    overflow: hidden;
     flex: 1 1 calc(33.33% - 5rem);
     max-width: calc(33.33% - 5rem);
-    height: 90vh;
+    height: auto;
   }
   .flex-item-center .carousel .slideshow-container .mySlides img,
   .flex-item-center .carousel .slideshow-container .mySlides video {
-    height: 30vh;
-    width: 80vh;
+    height: 100%;
+    width: 100%;
     max-width: 100%;
     object-fit: cover;
   }
+  .bar {
+    font-size: 1vw;
+  }
 }
-/* For screens smaller than 768px (like tablets and small desktops) */
-@media (max-width: 768px) {
+/* For screens between 1024px and 1440px (e.g., 15.6-inch laptops, larger laptops) */
+@media (min-width: 800px) and (max-width: 1450px) {
   nav {
-    padding: 0.3vw 0vw 1vw 0vw;
-    gap: 20px;
+    padding: 0.4vw 0vw 0.4vw 0vw;
+    gap: 25px;
     position: fixed;
     top: 0;
   }
@@ -84,8 +88,89 @@
     font-size: 1.8rem;
   }
   nav a img {
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+  footer {
+    padding: 0.6vw 0vw 0.6vw 0vw;
+  }
+  footer h4 {
+    font-size: 1.2rem;
+  }
+  main {
+    margin: 7vw 0vw 2vw 0vw;
+  }
+  .flex-item-hero {
+    margin: 6vh 0 15vh 0;
+  }
+  .flex-item-hero h1 {
+    font-size: 5rem;
+  }
+  .flex-item-hero p {
+    font-size: 2.2rem;
+  }
+  .flex-item-hero img.profile {
+    width: 22rem;
+    height: 22rem;
+  }
+  .flex-container-1 {
+    gap: 2rem;
+  }
+  .flex-item-left {
+    padding: 0.8vw;
+    margin: 1vw 0vw 0vw 0vw;
+    height: auto;
+    width: auto;
+  }
+  .flex-item-left,
+  .flex-item-img {
+    flex: 1;
+    max-width: 45%;
+    min-width: 0;
+  }
+  .flex-item-img img {
+    margin: 1vw;
+    height: 45vh;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: 50% 60%;
+  }
+  .flex-item-center {
+    margin: 1vw 4vw 4vw 4vw;
+    padding: 4vw;
+    flex: 1 1 calc(100% - 2rem);
+    max-width: calc(100% - 2rem);
+    height: auto;
+  }
+  .flex-item-center .carousel .slideshow-container .mySlides img,
+  .flex-item-center .carousel .slideshow-container .mySlides video {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .text {
+    font-size: 1.2rem;
+  }
+  .bar {
+    font-size: 2vw;
+  }
+}
+/* For screens smaller than 768px (like tablets and small desktops) */
+@media (min-width: 600px) and (max-width: 800px) {
+  nav {
+    padding: 0.3vw 0vw 1vw 0vw;
+    gap: 18px;
+    position: fixed;
+    top: 0;
+  }
+  nav a {
+    font-size: 1.5rem;
+  }
+  nav a img {
+    width: 1.8rem;
+    height: 1.8rem;
   }
   footer {
     padding: 1vw 0vw 1vw 0vw;
@@ -109,7 +194,7 @@
     width: 15rem;
     height: 15rem;
   }
-  .flex-row {
+  .flex-container-1 {
     gap: 0rem;
   }
   .flex-item-left {
@@ -147,18 +232,20 @@
   }
   .flex-item-center .carousel .slideshow-container .mySlides img,
   .flex-item-center .carousel .slideshow-container .mySlides video {
-    height: 40vh;
-    width: 70vh;
+    height: 100%;
+    width: 100%;
     max-width: 100%;
     object-fit: cover;
   }
   .text {
     font-size: 1rem;
-    top: 45%;
+  }
+  .bar {
+    font-size: 2.5vw;
   }
 }
 /* For screens smaller than 480px (smartphones) */
-@media (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 600px) {
   nav {
     padding: 0.3vw 0vw 3vw 0vw;
     gap: 10px;
@@ -195,7 +282,7 @@
     width: 10rem;
     height: 10rem;
   }
-  .flex-row {
+  .flex-container-1 {
     flex-direction: column;
   }
   .flex-item-left {
@@ -231,13 +318,15 @@
   }
   .flex-item-center .carousel .slideshow-container .mySlides img,
   .flex-item-center .carousel .slideshow-container .mySlides video {
-    height: 25vh;
-    width: 55vh;
+    height: 100%;
+    width: 100%;
     max-width: 100%;
     object-fit: cover;
   }
   .text {
     font-size: 0.9rem;
-    top: 25%;
+  }
+  .bar {
+    font-size: 2vw;
   }
 }
