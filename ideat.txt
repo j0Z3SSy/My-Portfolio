@@ -4,3 +4,4 @@
 4. profiilikuvan pyörätykses joku teksti, vaik motto tai jotai
 5. education kohas puuttu piste lainausmerkkien jälkeen.
 6. experience kohas logot menee tekstin päälle
+7. läppärillä ihan liian zoomannu sisään, liian isot koot. 15,6 tuumaa oli se koko. Saisko ratkastuu vaa säätämällä media querry rangea? Projects ja working sivuilla.
