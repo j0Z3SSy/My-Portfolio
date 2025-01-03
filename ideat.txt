@@ -1,0 +1,6 @@
+1. fin/eng toggle nappi
+2. dark/light mode nappi
+3. git yhteys dreamhostille?
+4. profiilikuvan pyörätykses joku teksti, vaik motto tai jotai
+5. education kohas puuttu piste lainausmerkkien jälkeen.
+6. experience kohas logot menee tekstin päälle
