@@ -8,5 +8,5 @@ function includeHTML(id, filePath) {
 }
 
 // Call the function to include the navbar and footer
-includeHTML("navbar", "../html/page-includes/navbar.html");
-includeHTML("footer", "../html/page-includes/footer.html");
+includeHTML("navbar", "/html/page-includes/navbar.html");
+includeHTML("footer", "/html/page-includes/footer.html");
